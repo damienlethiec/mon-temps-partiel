@@ -19,6 +19,8 @@
 
 /public/assets
 .byebug_history
+.idea
+dump.rdb
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key

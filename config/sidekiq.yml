@@ -1,4 +1,4 @@
 ---
 :queues:
-  - sjabloon_production_mailers
-  - sjabloon_production_default
+  - mon_temps_partiel_mailers
+  - mon_temps_partiel_default

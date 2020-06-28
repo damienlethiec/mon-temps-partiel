@@ -1,4 +1,4 @@
 web:     rails server
 webpack: ./bin/webpack-dev-server --watch --colors --progress
 redis:   redis-server
-sidekiq: bundle exec sidekiq -q mon-temps-partiel_development_default -q mon-temps-partiel_development_mailers
+sidekiq: bundle exec sidekiq -q mon__development_default -q bioclickandcollect_development_mailers

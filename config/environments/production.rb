@@ -65,7 +65,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   config.active_job.queue_adapter = :sidekiq
-  config.active_job.queue_name_prefix = "#{Rails.configuration.application_name.parameterize}_#{Rails.env}"
+  config.active_job.queue_name_prefix = Rails.configuration.application_name.parameterize
 
   config.action_mailer.perform_caching = false
 
