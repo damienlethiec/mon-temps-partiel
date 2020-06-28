@@ -1,0 +1,22 @@
+<%= tag.div class: 'fixed bottom-0 left-0 w-full p-2 bg-gray-800 text-gray-200 hidden',
+  data: {
+    controller: 'sjabloon--modal',
+    target: 'sjabloon--modal.container',
+    sjabloon__modal_cookie_name: "#{Rails.configuration.application_name.parameterize}_dismissed_newsletter_modal",
+    sjabloon__modal_cookie_on_close: true,
+    sjabloon__modal_stop_scroll: false,
+    sjabloon__modal_interval_time_in_seconds: "30",
+  } do %>
+  <div class="max-w-3xl mx-auto">
+    <h2 class="flex items-center justify-between text-lg font-semibold mb-2">
+      Subscribe to our newsletter
+
+      <button data-action="click->sjabloon--modal#close">
+        <svg class="block w-4 h-4 fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"> <g id="icon-shape"> <polygon id="Combined-Shape" points="10 8.58578644 2.92893219 1.51471863 1.51471863 2.92893219 8.58578644 10 1.51471863 17.0710678 2.92893219 18.4852814 10 11.4142136 17.0710678 18.4852814 18.4852814 17.0710678 11.4142136 10 18.4852814 2.92893219 17.0710678 1.51471863 10 8.58578644"></polygon> </g> </g> </svg>
+      </button>
+    </h2>
+
+    <%= render "sjabloon/subscribers/form" %>
+  </div>
+<% end if show_newsletter_subscribe_modal %>
+

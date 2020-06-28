@@ -1,0 +1,20 @@
+<%= form_with url: subscribers_path,
+  data: {
+    controller: "sjabloon--form sjabloon--form-validation",
+    target: "sjabloon--form-validation.form",
+    action: "ajax:success->sjabloon--form#onSuccess ajax:beforeSend->sjabloon--form-validation#submitForm",
+    sjabloon__form_site_name: Rails.configuration.application_name.parameterize,
+  } do |form| %>
+  <div class="flex flex-col sm:flex-row" data-target="sjabloon--form.fields">
+    <%= form.text_field :email, placeholder: "Your email", required: true, pattern: "[^@\s]+@[^@\s]+.[^@\s]+", class: "input sm:rounded-r-none" %>
+
+    <%= form.submit "Get weekly updates", class: "btn btn--primary sm:rounded-l-none" %>
+  </div>
+
+  <div class="slideDown fadeIn hidden" data-target="sjabloon--form.successMessage">
+    <h2 class="text-lg leading-tight">
+      You are subscribed.
+    </h2>
+  </div>
+<% end %>
+
