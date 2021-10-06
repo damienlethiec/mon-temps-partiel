@@ -11,7 +11,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 
 gem 'jbuilder', '~> 2.9', '>= 2.9.1'
-gem 'sidekiq', '~> 6.0', '>= 6.0.3'
+gem 'sidekiq', '~> 6.2'
 gem 'premailer-rails', '~> 1.10', '>= 1.10.3'
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
