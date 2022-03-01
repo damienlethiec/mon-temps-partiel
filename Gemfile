@@ -21,7 +21,7 @@ gem 'name_of_person', '~> 1.1', '>= 1.1.1'
 gem 'httparty', '~> 0.17.1'
 gem 'storext', '~> 3.1'
 gem 'redis', '~> 4.1', '>= 4.1.3'
-gem 'image_processing', '~> 1.9', '>= 1.9.3'
+gem 'image_processing', '~> 1.12'
 gem 'aws-sdk-s3', '~> 1.64'
 gem 'rollbar', '~> 2.22', '>= 2.22.1'
 
